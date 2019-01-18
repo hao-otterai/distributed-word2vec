@@ -1,4 +1,4 @@
-## Distributed training of Word2Vec word embeddings
+## Distributed training of Word2Vec
 Distributed training of a word embedding model (Word2vec) for large vocabularies
 
 ### Quick Start
