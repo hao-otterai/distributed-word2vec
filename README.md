@@ -9,9 +9,9 @@ Many modern natural language (NLP) models rely on word embeddings. Embeddings ar
 
 
 ### Tech Stack
-- Spark: distributed processing, fine-grained load balancing, failure recovery, in-memory operations
-- Parameter Server (PS): Used typically for sync models, incremental updates during training, or sometimes even some vector math. In
-![text here](https://github.com/haoyangOxford/distributed-word2vec/blob/master/parameter%20servers.png)
+- Spark: distributed processing, fine-grained load balancing, failure recovery, in-memory operations. 
+- Parameter Server (PS): Used typically for sync models, incremental updates during training, or sometimes even some vector math. 
+![parameter server](https://github.com/haoyangOxford/distributed-word2vec/blob/master/parameter%20servers.png)
 
 ### Data Source
  - [Common Crawl](https://registry.opendata.aws/commoncrawl/): A corpus of web crawl data composed of over 25 billion web pages hosted on AWS S3 Bucket and updated monthly
@@ -23,10 +23,12 @@ Build vectors for sets that are too large to fit in memory (such as the ad datas
 Have the ability to train many word vector models in parallel on multiple different datasets
 
 ## Business Value
-
+Web scale advertising platforms, search engines and personalized recommendation systems rely on large scale and fast training of word or social embeddings.
 
 ### MVP
-Build a scalable distributed training pipeline for word vectors, that can both train on very large datasets, and train as fast as possible. 
+ - ETL for preprocessing input text files 
+ - Setting up a parameter for storing and updating word rectors
+ - Build a scalable distributed training pipeline for word vectors on reasonable sized data.
 
 
 ### Stretch Goals
