@@ -11,7 +11,7 @@ Many modern natural language (NLP) models rely on word embeddings. Embeddings ar
 ### Tech Stack
 - Spark: distributed processing, fine-grained load balancing, failure recovery, in-memory operations
 - Parameter Server (PS): Used typically for sync models, incremental updates during training, or sometimes even some vector math. In
-![text here](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwixtaCK6_ffAhUHIDQIHeh9AAEQjRx6BAgBEAU&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fwww.slideshare.net%252FJenAman%252Fscaling-machine-learning-to-billions-of-parameters%26psig%3DAOvVaw1blGgg27fRGhvvvMBsOraH%26ust%3D1547918199899206&psig=AOvVaw1blGgg27fRGhvvvMBsOraH&ust=1547918199899206)
+![text here](https://github.com/haoyangOxford/distributed-word2vec/blob/master/parameter%20servers.png)
 
 ### Data Source
  - [Common Crawl](https://registry.opendata.aws/commoncrawl/): A corpus of web crawl data composed of over 25 billion web pages hosted on AWS S3 Bucket and updated monthly
